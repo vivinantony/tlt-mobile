@@ -1,0 +1,34 @@
+<ion-view view-title="{{logoHeader}}" class="posts-wrapper">
+    <ion-content class="padding">
+        <div class="card">
+            <div class="item item-divider">
+                {{data.title}}
+            </div>
+            <div class="item item-text-wrap">
+                <p ng-bind-html="data.content"></p>
+            </div>
+            <div class="item item-divider posts-footer">
+                <div>
+                    <label class="title">Tags: </label>
+                    <label ng-repeat="label in data.labels">{{label}}, </label>
+                </div>
+                <div>
+                    <label class="title">Published: </label>
+                    <label>{{data.published | date:'medium'}}</label>
+                </div>
+                <div>
+                    <label class="title">Updated: </label>
+                    <label>{{data.updated | date:'medium'}}</label>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <!-- <ion-footer-bar>
+    	<div class="buttons">
+		    <button class="button button-outline icon ion-chevron-left button-balanced"></button>
+	  	</div>
+	  	<div class="buttons pull-right">
+		    <button class="button button-outline icon ion-chevron-right button-balanced"></button>
+	  	</div>
+  	</ion-footer-bar> -->
+</ion-view>

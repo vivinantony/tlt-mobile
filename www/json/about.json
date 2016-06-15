@@ -1,0 +1,31 @@
+{
+	"page": "about",
+	"techie": {
+		"avatar": "https://sites.google.com/site/thelittletechie/img/TLT-Logo.png",
+		"title": "The Little Techie",
+		"subtitle": "Chronicling my adventures in software engineering",
+		"description": "TLT was started as a blog (www.thelittletechie.blogspot.com) on April 2012. Later the dot com (www.thelittletechie.com) was launched on 30th January 2015. The site is a parallax design and also responsive - works well on multiple devices. It is all about design and development."
+	},
+	"author": {
+		"avatar": "http://3.bp.blogspot.com/-xSo1lC7Mxbo/VAByTNFXn4I/AAAAAAAAHDc/oGpJR9JKGZ4/s1600/avatar.png",
+		"name": "Vivin Antony",
+		"subtitle": "Founder, designer, developer, writer",
+		"description": "Here I write mostly about software, technology, codings, my development/research works or anything that happens to interests me. If you are looking for something specific, you are at the right place.",
+		"quote": "If at first you don't succeed; call it version 1.0"
+	},
+	"dev": {
+		"avatar": "http://3.bp.blogspot.com/-UaR4yMH3Ss4/VBbLCF48e7I/AAAAAAAAHWU/NH4D1I9Ud00/s1600/pie-chart.png",
+		"para1": "I'm a part designer and coder and some how a poor blogger, but trying hard in blog field to become a professional.",
+		"para2": "I maintain a healthy balance between functionality and visual imapct in all my work. I believe every piece of design can be a work of art.",
+		"para3": "I enjoy turning complex problems into simple.",
+		"para4": "When I'm not coding or pushing pixels, you'll find me hanging out with mah friends. I want to live on Pandora with the Navi. I like to play with Transformers."
+	},
+	"social": {
+		"facebook": "https://www.facebook.com/TheLittleTechie",
+		"twitter": "https://twitter.com/vivinantony",
+		"googleplus": "https://plus.google.com/104070651474939118104",
+		"linkedin": "https://www.linkedin.com/in/vivinantony",
+		"codepen": "http://codepen.io/vivinantony",
+		"github": "https://www.github.com/vivinantony"
+	}
+}

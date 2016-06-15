@@ -1,0 +1,16 @@
+<ion-modal-view class="portfolio-modal-wrapper">
+    <ion-header-bar class="bar-calm">
+        <button class="button button-clear" ng-click="hidePortfolioModal()">
+            <i class="icon ion-android-close"></i>
+        </button>
+        <div class="title">{{portfolio.title}}</div>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="placeholder">
+            <img ng-src="{{portfolio.placeholder}}" alt="{{portfolio.title}}">
+        </div>
+    </ion-content>
+    <ion-footer-bar>
+        <a class="button button-icon button-balanced icon ion-eye pull-right" ng-if="portfolio.url" href="{{portfolio.url}}"></a>
+    </ion-footer-bar>
+</ion-modal-view>

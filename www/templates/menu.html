@@ -1,0 +1,52 @@
+<ion-side-menus>
+    <ion-pane ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+        <ion-tabs class="tabs-icon-top tabs-color-active-positive">
+            <!-- Blog Tab -->
+            <ion-tab title="Blog" icon-off="ion-code-working" icon-on="ion-code-working" href="#/tlt/blog">
+                <ion-nav-view name="tlt-blog"></ion-nav-view>
+            </ion-tab>
+            <!-- About Tab -->
+            <ion-tab title="About" icon-off="ion-person" icon-on="ion-person" href="#/tlt/about">
+                <ion-nav-view name="tlt-about"></ion-nav-view>
+            </ion-tab>
+            <!-- Resume Tab -->
+            <ion-tab title="Resume" icon-off="ion-document-text" icon-on="ion-document-text" href="#/tlt/resume">
+                <ion-nav-view name="tlt-resume"></ion-nav-view>
+            </ion-tab>
+            <!-- Portfolio Tab -->
+            <ion-tab title="Portfolio" icon-off="ion-images" icon-on="ion-images" href="#/tlt/portfolio">
+                <ion-nav-view name="tlt-portfolio"></ion-nav-view>
+            </ion-tab>
+            <!-- Contact Tab -->
+            <ion-tab title="Contact" icon-off="ion-email" icon-on="ion-email" href="#/tlt/contact">
+                <ion-nav-view name="tlt-contact"></ion-nav-view>
+            </ion-tab>
+        </ion-tabs>
+    </ion-pane>
+    <ion-side-menu side="left">
+        <header class="bar bar-header bar-stable">
+            <h1 class="title">Menu</h1>
+        </header>
+        <ion-content class="has-header">
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/app/search">
+                    Search
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/browse">
+                    Browse
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/playlists">
+                    Playlists
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

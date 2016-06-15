@@ -1,0 +1,32 @@
+<ion-view view-title="{{logoHeader}}" class="resume-wrapper">
+    <ion-content class="padding">
+        <h4 class="subheader">{{data.page}}</h4>
+        <div class="card padding center me-box">
+            <img ng-src="{{data.me.avatar}}">
+            <h1>{{data.me.name}}</h1>
+            <label>{{data.me.subtitle}}</label>
+            <p>{{data.me.description}}</p>
+            <p><em>"{{data.me.quote}}"</em></p>
+        </div>
+        <div class="card padding skill-box">
+            <h4>SKILLS</h4>
+            <button class="button" ng-repeat="skill in data.skills">{{skill}}</button>
+        </div>
+        <div class="card padding education-box">
+            <h4>EDUCATION</h4>
+            <p ng-repeat="education in data.educations">{{education.course}} from {{education.institution}}, {{education.place}}, in {{education.year}} - {{education.score}}%.</p>
+        </div>
+        <div class="card padding experience-box">
+            <h4>PROFESSIONAL EXPERIENCE</h4>
+            <div ng-repeat="exp in data.experiences">
+                <h5>{{exp.company}} • {{exp.place}} • {{exp.fromdate}} - {{exp.todate}}</h5>
+                <div><b>Designation:</b> {{exp.designation}}</div>
+                <div><b>Team size:</b> {{exp.teamsize}}</div>
+                <p>{{exp.description}}</p>
+                <ul>
+                    <li ng-repeat="role in exp.roles">{{role}}</li>
+                </ul>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

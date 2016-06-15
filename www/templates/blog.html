@@ -1,0 +1,11 @@
+<ion-view view-title="{{logoHeader}}">
+    <ion-content class="padding">
+        <h4 class="subheader">Blog</h4>
+        <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <ion-item ng-repeat="data in datas | filter: search" ng-click="viewPost(data.id)">
+                {{data.title}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

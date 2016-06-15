@@ -1,0 +1,74 @@
+{
+	"page": "resume",
+	"me": {
+		"avatar": "http://3.bp.blogspot.com/-xSo1lC7Mxbo/VAByTNFXn4I/AAAAAAAAHDc/oGpJR9JKGZ4/s1600/avatar.png",
+		"name": "Vivin Antony",
+		"subtitle": "HTML5, CSS3 and Web/Software Developer of 3.7 Years of Experience",
+		"description": "I am an effective team player, known for creativity, flexibility and sense of humour. Perseverance and smart work are my major strengths.",
+		"quote": "Learning AngularJS in depth",
+		"place": "chennai"
+	},
+	"skills": [
+		"HTML5", "CSS3", "JavaScript", "Bootstrap", "AngularJS", "MongoDB", "MEAN Stack", "Jquery", "Jade", "SASS", "Ionic", "GIT", "EmberJS", "Jiira"
+	],
+	"educations": [{
+		"institution": "PPG Institute of Technology",
+		"place": "Coimbatore",
+		"course": "Bachelor of Engineering in Electronics and Communication (B.E. ECE)",
+		"year": "2012",
+		"score": "71.70"
+	},{
+		"institution": "Vidya Vikasini Matric Hr. Sec. School",
+		"place": "Coimbatore",
+		"course": "H.S.C",
+		"year": "2008",
+		"score": "81.83"
+	},{
+		"institution": "Stanes Anglo Indian Hr. Sec. School",
+		"place": "Coonoor",
+		"course": "S.S.C",
+		"year": "2006",
+		"score": "76.4"
+	}],
+	"experiences": [{
+		"company": "Infosys Limited",
+		"url": "http://www.infosys.com/",
+		"place": "Chennai",
+		"fromdate": "July 2015",
+		"todate": "Till date",
+		"designation": "Senior Software Engineer"
+	},{
+		"company": "PoolCircle Technologies Private Limited",
+		"url": "http://www.poolcircle.com/",
+		"place": "Bangalore",
+		"fromdate": "May 2014",
+		"todate": "June 2015",
+		"designation": "Software Engineer",
+		"teamsize": "2",
+		"environment": "HTML, CSS, JavaScript, Bootstrap, JSP",
+		"description": "PoolCircle is a technology product start-up focused on the ridesharing space with a strong emphasis on safety. PoolCircle allows people to share rides with other people they trust. A user can sign up in the platform, publish a ride and find other people with whom he can commute. User can build his own circle of trust by adding his social connections.",
+		"roles": ["Heavily involved in product design and user experience flows for web and app (IOS & Android).", "Extensive experience in designing web application from ground up.", "Was responsible for entire web development and handled end to end web application.", "Analysis on design patterns and colour concept for the website and user interaction.", "Developed a responsive design that works on cross browsers and multiple devices.", "Was responsible for all the marketing ad creativity and fb promotions.", "The user base grew 10X during my tenure.", "Involved in server side deployment and testing the app and the web."]
+	},{
+		"company": "Edon Technologies Private Limited",
+		"url": "http://www.edon.in/",
+		"place": "Chennai",
+		"fromdate": "Oct 2013",
+		"todate": "April 2014",
+		"designation": "Software Engineer",
+		"teamsize": "3",
+		"environment": "HTML5, CSS3, JavaScript",
+		"description": "Edon is a complete Software Solutions provider for various Educational Institutions. It is a start-up based product involved in e-learning technology.",
+		"roles": ["Involved in planning the design and its User Experience.", "Converted the design into Web Pages using HTML, CSS and JavaScipt", "Played a vital role between development and design.", "Involved in writing HTML, CSS and JavaScript for cross browsers."]
+	},{
+		"company": "Hypertrix Infolabs Private Limited",
+		"url": "http://www.hypertrix.com/",
+		"place": "Chennai",
+		"fromdate": "Oct 2012",
+		"todate": "Sept 2013",
+		"designation": "Software Develper",
+		"teamsize": "3",
+		"environment": "HTML, CSS, JavaScript, ASP.Net, SQL",
+		"description": "The project is 'Archetype Portal' which deals with online gaming portal wherein users subscribe and play tournaments.",
+		"roles": ["Was involved in designing Photoshop based screen of the main portal and converting them to html page.", "Involved in writing HTML, CSS and JavaScript for cross browsers.", "Was involved to research on 3rd party components and implement in the application.", "Involved in Admin Portal backend for moderation of the site and updating news and forums.", "Involved in SQL-Lite for database management."]
+	}]
+}

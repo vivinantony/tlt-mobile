@@ -1,0 +1,31 @@
+<ion-view view-title="{{logoHeader}}" class="about-wrapper">
+    <ion-content class="padding">
+        <h4 class="subheader">{{data.page}}</h4>
+        <div class="card padding center">
+            <img ng-src="{{data.techie.avatar}}" alt="techie">
+            <h1>{{data.techie.title}}</h1>
+            <label class="subtitle">{{data.techie.subtitle}}</label>
+            <p>{{data.techie.description}}</p>
+        </div>
+        <div class="card padding center">
+            <img ng-src="{{data.author.avatar}}" alt="author">
+            <h1>{{data.author.name}}</h1>
+            <label class="subtitle">{{data.author.subtitle}}</label>
+            <p>{{data.author.description}}</p>
+        </div>
+        <div class="card padding center">
+            <img ng-src="{{data.dev.avatar}}" alt="author" class="dev-img">
+            <p>{{data.dev.para1}}</p>
+            <p>{{data.dev.para2}}</p>
+            <p>{{data.dev.para3}}</p>
+            <p>{{data.dev.para4}}</p>
+        </div>
+        <p>Am right here!</p>
+        <button class="button icon ion-social-facebook social facebook"></button>
+        <button class="button icon ion-social-twitter social twitter"></button>
+        <button class="button icon ion-social-googleplus social googleplus"></button>
+        <button class="button icon ion-social-linkedin social linkedin"></button>
+        <button class="button icon ion-social-codepen social codepen"></button>
+        <button class="button icon ion-social-github social github"></button>
+    </ion-content>
+</ion-view>
