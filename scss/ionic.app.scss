@@ -17,10 +17,8 @@ $dark:                            #444 !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
-
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-
 @font-face {
     font-family: "fontregular";
     src: url(../fonts/HelveticaNeue-Roman.otf);
@@ -54,293 +52,268 @@ $googleplus-color: #dc4e41;
 $linkedin-color: #0077b5;
 $codepen-color:#222222;
 $github-color:#6cc644;
-
 .center {
-	text-align: center;
+    text-align: center;
 }
 
 .social {
-	color: white;
-	margin-bottom: 3px;
-
-	&.facebook {
-		background: $facebook-color;
-	}
-
-	&.twitter {
-		background: $twitter-color;
-	}
-
-	&.googleplus {
-		background: $googleplus-color;
-	}
-
-	&.linkedin {
-		background: $linkedin-color;
-	}
-
-	&.codepen {
-		background: $codepen-color;
-	}
-
-	&.github {
-		background: $github-color;
-	}
+    color: white;
+    margin-bottom: 3px;
+    &.facebook {
+        background: $facebook-color;
+    }
+    &.twitter {
+        background: $twitter-color;
+    }
+    &.googleplus {
+        background: $googleplus-color;
+    }
+    &.linkedin {
+        background: $linkedin-color;
+    }
+    &.codepen {
+        background: $codepen-color;
+    }
+    &.github {
+        background: $github-color;
+    }
 }
 
 body {
-	font-family: "fontcondensed";
+    font-family: "fontcondensed";
 }
 
 .logo-header {
-	width: 44px;
+    width: 44px;
 }
 
 ion-content {
-	background-color: #eee;
+    background-color: #eee;
 }
 
 ion-side-menu ion-content {
-	background-color: white
+    background-color: white
 }
 
-.bar.bar-header, .bar.bar-footer {
-	background-color: $primary-color !important;
+.bar.bar-header,
+.bar.bar-footer {
+    background-color: $primary-color !important;
 }
 
 .bar {
-	.button.button-clear {
-		color: #eee;
-	}
+    .button.button-clear {
+        color: #eee;
+    }
 }
 
 .tabs {
-	.tab-title {
-		font-family: "fontcondensed";
-	}
+    .tab-title {
+        font-family: "fontcondensed";
+    }
 }
 
-ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated {
-  color: $primary-color;
-  border-color: $primary-color;
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active,
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active,
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated {
+    color: $primary-color;
+    border-color: $primary-color;
 }
 
 .nav-bar-tabs-top.hide ~ .view-container .tabs-top .tabs {
-	top: 44px;
+    top: 44px;
 }
 
 h4 {
-	&.subheader {
-		text-transform: uppercase;
-		font-size: 15px;
-		color: #065e52;
-		font-family: "fontbold";
-	}
+    &.subheader {
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #065e52;
+        font-family: "fontbold";
+    }
 }
 
 .welcome-wrapper {
-	background: url(../img/tlt-mobile-cover.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    background: url(../img/tlt-mobile-cover.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .posts-wrapper {
-	.card {
-		.item {
-		    overflow: visible;
-		    text-overflow: clip;
-		    white-space: normal;
-		}
-	}
-
-	.posts-footer {
-		label {
-			font-family: "fontthin";
-			font-size: 12px;
-			&.title {
-				font-family: "fontmedium";
-				color: $primary-color;
-			}
-		}
-	}
+    .card {
+        .item {
+            overflow: visible;
+            text-overflow: clip;
+            white-space: normal;
+        }
+    }
+    .posts-footer {
+        label {
+            font-family: "fontthin";
+            font-size: 12px;
+            &.title {
+                font-family: "fontmedium";
+                color: $primary-color;
+            }
+        }
+    }
 }
 
 .tltpost {
-	.tltimg {
-		img {
-			width: 100%;
-			box-shadow: 3px 3px 4px $shaddow-color;
-		}
-
-		a {
-			pointer-events: none;
-		}
-	}
-
-	.tltheader {
-		background: #eee;
-		padding: 3px;
-		font-family: "fontmedium";
-		font-size: 14px;
-		margin-top: 20px;
-	}
-
-	.default-header {
-			&:before {
-			content: "\f10a";
-			font-family: "Ionicons";
-		}
-	}
-
-	.code-header {
-		&:before {
-			content: "\f271";
-			font-family: "Ionicons";
-		}
-	}
-
-	p {
-		margin: 10px 0;
-	}
-
-	li {
-		&:before {
-			content: "\f45b";
-			font-family: "Ionicons";
-			margin-right: 5px;
-		}
-	}
-
-	code {
-		color: $primary-color;
-		font-family: "fontcondensed";
-		border-bottom: 1px dotted $primary-color
-	}
-
-	pre {
-		border: 1px dashed $primary-color;
-		padding: 5px;
-	}
-
-	.demo-button {
-		text-transform: uppercase;
-		background: $primary-color;
-		padding: 5px 10px;
-		margin: 10px 0;
-		border-radius: 5px;
-		text-decoration: none;
-		color: white;
-		display: inline-block
-	}
+    .tltimg {
+        img {
+            width: 100%;
+            box-shadow: 3px 3px 4px $shaddow-color;
+        }
+        a {
+            pointer-events: none;
+        }
+    }
+    .tltheader {
+        background: #eee;
+        padding: 3px;
+        font-family: "fontmedium";
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .default-header {
+        &:before {
+            content: "\f10a";
+            font-family: "Ionicons";
+        }
+    }
+    .code-header {
+        &:before {
+            content: "\f271";
+            font-family: "Ionicons";
+        }
+    }
+    p {
+        margin: 10px 0;
+    }
+    li {
+        &:before {
+            content: "\f45b";
+            font-family: "Ionicons";
+            margin-right: 5px;
+        }
+    }
+    code {
+        color: $primary-color;
+        font-family: "fontcondensed";
+        border-bottom: 1px dotted $primary-color
+    }
+    pre {
+        border: 1px dashed $primary-color;
+        padding: 5px;
+    }
+    .demo-button {
+        text-transform: uppercase;
+        background: $primary-color;
+        padding: 5px 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        display: inline-block
+    }
 }
 
 .about-wrapper {
-	.subtitle {
-		color: $primary-color;
-		font-family: "fontmedium";
-		font-size: 20px;
-	}
-	.dev-img {
-		width: 200px;
-	}
-	h1 {
-		color: $primary-color;
-		font-family: "fontbold";
-	}
+    .subtitle {
+        color: $primary-color;
+        font-family: "fontmedium";
+        font-size: 20px;
+    }
+    h1 {
+        color: $primary-color;
+        font-family: "fontbold";
+    }
+    .version {
+        font-family: "fontthin"
+    }
 }
 
 .portfolio-wrapper {
-	.placeholder {
-		width: 100%;
-		height: 200px;
-		overflow: hidden;
-		img {
-			width: 100%;
-		}
-	}
-
-	h4 {
-		font-family: "fontmedium";
-		color: $primary-color;
-	}
-
-	label {
-		font-family: "fontthin";
-	}
-
-	@media(min-width: 568px) {
-		.card {
-			margin: 5px;
-		}
-	}
-
-	@media(max-width: 569px) {
-		.card {
-			margin: 0;
-		}
-	}
-
-	.row {
-		&.responsive-sm {
-			padding: 0;
-			flex-wrap: wrap;
-
-			@media(min-width: 568px) {
-				.col {
-					padding: 5px;
-				}
-			}
-		}
-	}
+    .placeholder {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    h4 {
+        font-family: "fontmedium";
+        color: $primary-color;
+    }
+    label {
+        font-family: "fontthin";
+    }
+    @media(min-width: 568px) {
+        .card {
+            margin: 5px;
+        }
+    }
+    @media(max-width: 569px) {
+        .card {
+            margin: 0;
+        }
+    }
+    .row {
+        &.responsive-sm {
+            padding: 0;
+            flex-wrap: wrap;
+            @media(min-width: 568px) {
+                .col {
+                    padding: 5px;
+                }
+            }
+        }
+    }
 }
 
 .portfolio-modal-wrapper {
-	.placeholder img {
-		width: 100%;
-	}
+    .placeholder img {
+        width: 100%;
+    }
 }
 
 .resume-wrapper {
-	.me-box {
-		h1 {
-			color: $primary-color;
-			font-family: "fontbold";
-		}
-
-		label {
-			color: $primary-color;
-			font-family: "fontmedium";
-			font-size: 20px;
-		}
-
-		p {
-			em {
-				font-style: italic;
-				font-size: 18px;
-			}
-		}
-	}
-
-	.experience-box {
-		h5 {
-			font-family: "fontmedium";
-			font-size: 14px;
-			color: $primary-color;
-		}
-	}
-
-	h4 {
-		color: $primary-color;
-		font-family: "fontmedium"
-	}
-
-	li {
-		&:before {
-			content: "\f45b";
-			font-family: "Ionicons";
-			margin-right: 5px;
-		}
-	}
+    .me-box {
+        h1 {
+            color: $primary-color;
+            font-family: "fontbold";
+        }
+        label {
+            color: $primary-color;
+            font-family: "fontmedium";
+            font-size: 20px;
+        }
+        p {
+            em {
+                font-style: italic;
+                font-size: 18px;
+            }
+        }
+    }
+    .experience-box {
+        h5 {
+            font-family: "fontmedium";
+            font-size: 14px;
+            color: $primary-color;
+        }
+    }
+    h4 {
+        color: $primary-color;
+        font-family: "fontmedium"
+    }
+    li {
+        &:before {
+            content: "\f45b";
+            font-family: "Ionicons";
+            margin-right: 5px;
+        }
+    }
 }

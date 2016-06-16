@@ -13,15 +13,8 @@ angular.module('tltApp.router', [])
     .state('tlt', {
         url: "/tlt",
         abstract: true,
-        templateUrl: "templates/menu.html"
+        templateUrl: "templates/tabs.html"
     })
-
-    // setup an abstract state for the tabs directive
-    // .state('tlt', {
-    //   url: '/tlt',
-    //   abstract: true,
-    //   templateUrl: 'templates/tabs.html'
-    // })
 
     // Each tab has its own nav history stack:
 
