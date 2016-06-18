@@ -9,15 +9,15 @@
             <p><em>"{{data.me.quote}}"</em></p>
         </div>
         <div class="card padding skill-box">
-            <h4>SKILLS</h4>
+            <h3>SKILLS</h3>
             <button class="button" ng-repeat="skill in data.skills">{{skill}}</button>
         </div>
         <div class="card padding education-box">
-            <h4>EDUCATION</h4>
+            <h3>EDUCATION</h3>
             <p ng-repeat="education in data.educations">{{education.course}} from {{education.institution}}, {{education.place}}, in {{education.year}} - {{education.score}}%.</p>
         </div>
         <div class="card padding experience-box">
-            <h4>PROFESSIONAL EXPERIENCE</h4>
+            <h3>PROFESSIONAL EXPERIENCE</h3>
             <div ng-repeat="exp in data.experiences">
                 <h5>{{exp.company}} • {{exp.place}} • {{exp.fromdate}} - {{exp.todate}}</h5>
                 <div><b>Designation:</b> {{exp.designation}}</div>

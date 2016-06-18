@@ -253,9 +253,10 @@ h4 {
             width: 100%;
         }
     }
-    h4 {
+    h3 {
         font-family: "fontmedium";
         color: $primary-color;
+        font-size: 18px;
     }
     label {
         font-family: "fontthin";
@@ -290,6 +291,18 @@ h4 {
 }
 
 .resume-wrapper {
+    h3 {
+        color: $primary-color;
+        font-family: "fontmedium";
+        font-size: 18px;
+    }
+    li {
+        &:before {
+            content: "\f45b";
+            font-family: "Ionicons";
+            margin-right: 5px;
+        }
+    }
     .me-box {
         h1 {
             color: $primary-color;
@@ -312,17 +325,6 @@ h4 {
             font-family: "fontmedium";
             font-size: 14px;
             color: $primary-color;
-        }
-    }
-    h4 {
-        color: $primary-color;
-        font-family: "fontmedium"
-    }
-    li {
-        &:before {
-            content: "\f45b";
-            font-family: "Ionicons";
-            margin-right: 5px;
         }
     }
 }
