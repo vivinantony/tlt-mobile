@@ -9,6 +9,9 @@
                 </i>
             </label>
         </form>
+        <!-- <div class="no-results center padding" ng-show="datas.length == 0">
+            No result found...
+        </div> -->
         <ion-list>
             <ion-item ng-repeat="data in datas" ng-click="viewPost(data.id)">
                 {{data.title}}

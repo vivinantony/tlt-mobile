@@ -4,10 +4,10 @@ angular.module('tltApp.BlogCtrl', [])
     $ionicLoading.show();
 
     var key = "AIzaSyCODXphcNLhOyx83sdCWMTeDD9LmO3_QBY";
-    var api = "https://www.googleapis.com/blogger/v3/blogs/8625939250791601558/posts?key=" + key;
+    var api = "https://www.googleapis.com/blogger/v3/blogs/8625939250791601558/posts?fetchBodies=false&key=" + key;
     $http.get(api).success(function(res) {
         $scope.datas = res.items;
-        localStorage.setItem('postTopics', JSON.stringify($scope.datas));
+        // localStorage.setItem('postTopics', JSON.stringify($scope.datas));
     }).catch(function(err) {
         console.log("Error BlogCtrl: " + err);
     }).finally(function() {
@@ -22,12 +22,12 @@ angular.module('tltApp.BlogCtrl', [])
         $ionicLoading.show();
 
         var key = "AIzaSyCODXphcNLhOyx83sdCWMTeDD9LmO3_QBY";
-        var api = "https://www.googleapis.com/blogger/v3/blogs/8625939250791601558/posts/search?q=" + query + "&key=" + key;
+        var api = "https://www.googleapis.com/blogger/v3/blogs/8625939250791601558/posts/search?q=" + query + "&fetchBodies=false&key=" + key;
 
         $http.get(api).success(function(res) {
             $scope.datas = res.items;
         }).catch(function(err) {
-            console.log("Error SearchCtrl: " + err);
+            console.log("Error BlogCtrl: " + err);
         }).finally(function() {
             $ionicLoading.hide();
         });
