@@ -1,11 +1,16 @@
 <ion-view view-title="{{logoHeader}}" class="posts-wrapper">
+    <!-- <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-share" ng-click="shareNative()">
+    </button>
+</ion-nav-buttons>
+ -->
     <ion-content class="padding">
         <div class="card">
             <div class="item item-divider">
                 {{data.title}}
             </div>
             <div class="item item-text-wrap">
-                <p ng-bind-html="data.content"></p>
+                <p ng-bind-html="data.content | hrefToJS"></p>
             </div>
             <div class="item item-divider posts-footer">
                 <div>
@@ -24,11 +29,11 @@
         </div>
     </ion-content>
     <!-- <ion-footer-bar>
-    	<div class="buttons">
-		    <button class="button button-outline icon ion-chevron-left button-balanced"></button>
-	  	</div>
-	  	<div class="buttons pull-right">
-		    <button class="button button-outline icon ion-chevron-right button-balanced"></button>
-	  	</div>
-  	</ion-footer-bar> -->
+        <div class="buttons">
+            <button class="button button-outline icon ion-chevron-left button-balanced"></button>
+        </div>
+        <div class="buttons pull-right">
+            <button class="button button-outline icon ion-chevron-right button-balanced"></button>
+        </div>
+    </ion-footer-bar> -->
 </ion-view>

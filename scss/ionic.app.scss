@@ -140,6 +140,12 @@ h4 {
     background-size: cover;
 }
 
+.blog-wrapper {
+    .search-box {
+        margin-bottom: 10px;
+    }
+}
+
 .posts-wrapper {
     .card {
         .item {
@@ -158,65 +164,64 @@ h4 {
             }
         }
     }
-}
-
-.tltpost {
-    .tltimg {
-        img {
-            width: 100%;
-            box-shadow: 3px 3px 4px $shaddow-color;
+    .tltpost {
+        .tltimg {
+            img {
+                width: 100%;
+                box-shadow: 3px 3px 4px $shaddow-color;
+            }
+            a {
+                pointer-events: none;
+            }
         }
-        a {
-            pointer-events: none;
+        .tltheader {
+            background: #eee;
+            padding: 3px;
+            font-family: "fontmedium";
+            font-size: 14px;
+            margin-top: 20px;
         }
-    }
-    .tltheader {
-        background: #eee;
-        padding: 3px;
-        font-family: "fontmedium";
-        font-size: 14px;
-        margin-top: 20px;
-    }
-    .default-header {
-        &:before {
-            content: "\f10a";
-            font-family: "Ionicons";
+        .default-header {
+            &:before {
+                content: "\f10a";
+                font-family: "Ionicons";
+            }
         }
-    }
-    .code-header {
-        &:before {
-            content: "\f271";
-            font-family: "Ionicons";
+        .code-header {
+            &:before {
+                content: "\f271";
+                font-family: "Ionicons";
+            }
         }
-    }
-    p {
-        margin: 10px 0;
-    }
-    li {
-        &:before {
-            content: "\f45b";
-            font-family: "Ionicons";
-            margin-right: 5px;
+        p {
+            margin: 10px 0;
         }
-    }
-    code {
-        color: $primary-color;
-        font-family: "fontcondensed";
-        border-bottom: 1px dotted $primary-color
-    }
-    pre {
-        border: 1px dashed $primary-color;
-        padding: 5px;
-    }
-    .demo-button {
-        text-transform: uppercase;
-        background: $primary-color;
-        padding: 5px 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        text-decoration: none;
-        color: white;
-        display: inline-block
+        li {
+            &:before {
+                content: "\f45b";
+                font-family: "Ionicons";
+                margin-right: 5px;
+            }
+        }
+        code {
+            color: $primary-color;
+            font-family: "fontcondensed";
+            border-bottom: 1px dotted $primary-color
+        }
+        pre {
+            border: 1px dashed $primary-color;
+            padding: 5px;
+        }
+        .demo-button {
+            text-transform: uppercase;
+            background: $primary-color;
+            padding: 5px 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            display: inline-block
+        }
     }
 }
 
@@ -316,4 +321,12 @@ h4 {
             margin-right: 5px;
         }
     }
+}
+
+.inAppBrowserWrap .demo-header {
+    display: none;
+}
+
+.inAppBrowserWrap #social-plugin {
+    display: none;
 }

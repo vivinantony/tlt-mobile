@@ -1,4 +1,4 @@
-angular.module('tltApp', ['ionic', 'firebase', 'tltApp.router', 'tltApp.controllers'])
+angular.module('tltApp', ['ionic', 'firebase', 'tltApp.router', 'tltApp.filter', 'tltApp.CommonCtrl', 'tltApp.WelcomeCtrl', 'tltApp.BlogCtrl', 'tltApp.PostCtrl', 'tltApp.AboutCtrl', 'tltApp.ResumeCtrl', 'tltApp.PortfolioCtrl', 'tltApp.ContactCtrl'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -19,5 +19,5 @@ angular.module('tltApp', ['ionic', 'firebase', 'tltApp.router', 'tltApp.controll
 .config(['$ionicConfigProvider', function($ionicConfigProvider) {
     $ionicConfigProvider.tabs.position('top');
     $ionicConfigProvider.navBar.alignTitle('center');
-    $ionicConfigProvider.backButton.previousTitleText('').icon('ion-ios-arrow-left');
+    $ionicConfigProvider.backButton.previousTitleText('');
 }])

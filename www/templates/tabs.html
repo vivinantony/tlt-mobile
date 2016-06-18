@@ -8,7 +8,7 @@
             </ion-nav-buttons>
         </ion-nav-bar>
         <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
-        <ion-tabs class="tabs-icon-top tabs-color-active-positive">
+        <ion-tabs class="tabs-icon-top tabs-color-active-positive" ng-class="{'tabs-item-hide': hideTab()}">
             <!-- Blog Tab -->
             <ion-tab title="Blog" icon-off="ion-code-working" icon-on="ion-code-working" href="#/tlt/blog">
                 <ion-nav-view name="tlt-blog"></ion-nav-view>

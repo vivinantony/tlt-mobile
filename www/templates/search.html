@@ -1,7 +1,6 @@
-<ion-view view-title="{{logoHeader}}" class="blog-wrapper">
+<ion-view view-title="{{logoHeader}}" class="search-wrapper">
     <ion-content class="padding">
-        <ion-refresher on-refresh="doRefresh()"></ion-refresher>
-        <form ng-submit="search(query)" class="search-box">
+        <form ng-submit="search(query)">
             <label class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
                 <input type="search" placeholder="Search" ng-model="query">
@@ -10,7 +9,7 @@
             </label>
         </form>
         <ion-list>
-            <ion-item ng-repeat="data in datas" ng-click="viewPost(data.id)">
+            <ion-item ng-repeat="data in datas.items" ng-click="viewPost(data.id)">
                 {{data.title}}
             </ion-item>
         </ion-list>

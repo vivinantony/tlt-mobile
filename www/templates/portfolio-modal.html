@@ -11,6 +11,6 @@
         </div>
     </ion-content>
     <ion-footer-bar>
-        <a class="button button-icon button-balanced icon ion-eye pull-right" ng-if="portfolio.url" href="{{portfolio.url}}"></a>
+        <a class="button button-icon button-balanced icon ion-eye pull-right" ng-if="portfolio.url" ng-click="window.open('{{portfolio.url}}', '_blank')"></a>
     </ion-footer-bar>
 </ion-modal-view>
