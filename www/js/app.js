@@ -1,4 +1,4 @@
-angular.module('tltApp', ['ionic', 'firebase', 'tltApp.router', 'tltApp.filter', 'tltApp.CommonCtrl', 'tltApp.WelcomeCtrl', 'tltApp.BlogCtrl', 'tltApp.PostCtrl', 'tltApp.AboutCtrl', 'tltApp.ResumeCtrl', 'tltApp.PortfolioCtrl', 'tltApp.ContactCtrl'])
+angular.module('tltApp', ['ionic', 'firebase'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {

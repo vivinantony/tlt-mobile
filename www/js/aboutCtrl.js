@@ -1,4 +1,4 @@
-angular.module('tltApp.AboutCtrl', [])
+angular.module('tltApp')
 
 .controller('AboutCtrl', function($scope, $http, $ionicLoading, $firebaseObject) {
     $ionicLoading.show();

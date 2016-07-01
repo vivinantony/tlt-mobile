@@ -1,4 +1,4 @@
-angular.module('tltApp.PostCtrl', [])
+angular.module('tltApp')
 
 .controller('PostCtrl', function($scope, $http, $stateParams, $ionicLoading) {
     $ionicLoading.show();

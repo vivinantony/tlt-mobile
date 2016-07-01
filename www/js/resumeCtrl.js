@@ -1,4 +1,4 @@
-angular.module('tltApp.ResumeCtrl', [])
+angular.module('tltApp')
 
 .controller('ResumeCtrl', function($scope, $http, $ionicLoading, $firebaseObject) {
     $ionicLoading.show();

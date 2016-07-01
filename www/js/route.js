@@ -1,4 +1,4 @@
-angular.module('tltApp.router', [])
+angular.module('tltApp')
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -34,6 +34,16 @@ angular.module('tltApp.router', [])
             'tlt-blog': {
                 templateUrl: 'templates/posts.html',
                 controller: 'PostCtrl'
+            }
+        }
+    })
+
+    .state('tlt.discussion', {
+        url: '/discussion',
+        views: {
+            'tlt-blog': {
+                templateUrl: 'templates/discussion.html',
+                controller: 'WelcomeCtrl'
             }
         }
     })
@@ -77,6 +87,7 @@ angular.module('tltApp.router', [])
             }
         }
     });
+
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tlt/blog');

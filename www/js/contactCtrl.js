@@ -1,4 +1,4 @@
-angular.module('tltApp.ContactCtrl', [])
+angular.module('tltApp')
 
 .controller('ContactCtrl', function($scope) {
 

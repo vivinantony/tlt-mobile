@@ -1,4 +1,4 @@
-angular.module('tltApp.PortfolioCtrl', [])
+angular.module('tltApp')
 
 .controller('PortfolioCtrl', function($scope, $http, $ionicModal, $state, $firebaseObject, $ionicLoading, $timeout) {
     $ionicLoading.show();

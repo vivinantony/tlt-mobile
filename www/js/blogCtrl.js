@@ -1,4 +1,4 @@
-angular.module('tltApp.BlogCtrl', [])
+angular.module('tltApp')
 
 .controller('BlogCtrl', function($scope, $http, $state, $timeout, $ionicLoading) {
     $ionicLoading.show();

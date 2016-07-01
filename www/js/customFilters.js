@@ -1,4 +1,4 @@
-angular.module('tltApp.filter', [])
+angular.module('tltApp')
 
 .filter('hrefToJS', function($sce, $sanitize) {
     return function(text) {
