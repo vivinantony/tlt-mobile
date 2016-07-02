@@ -1,12 +1,12 @@
 {
-  "name": "TLT",
-  "private": "true",
-  "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.3.1",
-    "platform.js": "platform#^1.3.1"
-  },
-  "dependencies": {
-    "firebase": "^3.1.0",
-    "angularfire": "^2.0.1"
-  }
+    "name": "TLT",
+    "private": "true",
+    "devDependencies": {
+        "ionic": "driftyco/ionic-bower#1.3.1",
+        "platform.js": "platform#^1.3.1"
+    },
+    "dependencies": {
+        "firebase": "2.4.2",
+        "angularfire": "1.2.0"
+    }
 }
